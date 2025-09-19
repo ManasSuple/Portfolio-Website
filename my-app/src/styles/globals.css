@@ -1,1 +1,9 @@
-@import "tailwindcss/base";
+@import "tailwindcss";
+
+:root {
+  --font-mont: 'Montserrat', sans-serif;
+}
+
+.font-mont {
+  font-family: var(--font-mont), sans-serif;
+}
