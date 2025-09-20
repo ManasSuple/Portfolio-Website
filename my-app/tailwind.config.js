@@ -1,8 +1,6 @@
-/**@type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 
 const { fontFamily } = require("tailwindcss/defaultTheme");
-
-
 
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
@@ -19,8 +17,5 @@ module.exports = {
       },
     },
   },
-  plugins: {
-    '@tailwindcss/postcss': {},
-    autoprefixer: {},
-  },
+  plugins: [],
 };
