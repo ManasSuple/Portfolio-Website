@@ -26,65 +26,79 @@ const Skills = () => {
       <h2 className="font-bold text-4xl md:text-6xl lg:text-8xl mt-16 md:mt-32 lg:mt-64 w-full text-center">
         Skills
       </h2>
-      <div className="grid w-full grid-cols-8 gap-16 mt-16">
-        {/* Left side - Tech Stack Description */}
-        <div className="col-span-3 flex flex-col items-start justify-start">
-          <h2 className="text-lg mb-4 font-bold uppercase text-dark/75">
-            Tech Stack
-          </h2>
-          
-          <p className="font-medium mb-4">
-            I specialize in modern web development using cutting-edge technologies. 
-            My expertise spans across frontend and backend development, with a strong 
-            focus on creating responsive and interactive user experiences.
-          </p>
-
-          <p className="font-medium mb-4">
-            From React and JavaScript for dynamic frontend development to Python and 
-            PostgreSQL for robust backend solutions, I bring comprehensive technical 
-            skills to every project.
-          </p>
-
-          <p className="font-medium">
-            I'm passionate about staying up-to-date with the latest technologies and 
-            frameworks, ensuring that every solution I deliver is both modern and 
-            future-proof.
-          </p>
-        </div>
-
-        {/* Right side - IconCloud in styled box */}
-        <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-2">
+      <div className="w-full mt-16 flex justify-center">
+        {/* Main content box with Tech Stack and IconCloud */}
+        <div className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-2 w-full max-w-6xl">
           <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark rounded-[2rem] -z-10" />
-          <div className="w-full h-[400px] rounded-2xl bg-light p-4 flex items-center justify-center">
-            <div className="w-full h-full max-w-sm">
-              <IconCloud images={images} />
+          <div className="w-full h-[400px] rounded-2xl bg-light p-4">
+            {/* Desktop/Tablet: 2-column layout */}
+            <div className="hidden md:flex h-full gap-6">
+              {/* Left side - Tech Stack Description */}
+              <div className="w-1/2 flex flex-col items-start justify-start">
+                <h2 className="text-lg mb-4 font-bold uppercase text-dark/75">
+                  Tech Stack
+                </h2>
+                
+                <p className="font-medium mb-4 text-sm">
+                  I specialize in modern web development using cutting-edge technologies. 
+                  My expertise spans across frontend and backend development, with a strong 
+                  focus on creating responsive and interactive user experiences.
+                </p>
+
+                <p className="font-medium mb-4 text-sm">
+                  From React and JavaScript for dynamic frontend development to Python and 
+                  PostgreSQL for robust backend solutions, I bring comprehensive technical 
+                  skills to every project.
+                </p>
+
+                <p className="font-medium text-sm">
+                  I'm passionate about staying up-to-date with the latest technologies and 
+                  frameworks, ensuring that every solution I deliver is both modern and 
+                  future-proof.
+                </p>
+              </div>
+
+              {/* Right side - IconCloud */}
+              <div className="w-1/2 flex items-center justify-center">
+                <div className="w-full h-full max-w-sm">
+                  <IconCloud images={images} />
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile: Stacked layout */}
+            <div className="md:hidden flex flex-col h-full">
+              {/* Top - IconCloud */}
+              <div className="flex-1 flex items-center justify-center mb-4">
+                <div className="w-full h-full max-w-xs">
+                  <IconCloud images={images} />
+                </div>
+              </div>
+
+              {/* Bottom - Tech Stack Description */}
+              <div className="flex flex-col items-start justify-start">
+                <h2 className="text-lg mb-4 font-bold uppercase text-dark/75">
+                  Tech Stack
+                </h2>
+                
+                <p className="font-medium mb-3 text-sm">
+                  I specialize in modern web development using cutting-edge technologies. 
+                  My expertise spans across frontend and backend development.
+                </p>
+
+                <p className="font-medium mb-3 text-sm">
+                  From React and JavaScript for dynamic frontend development.
+                </p>
+
+                <p className="font-medium text-sm">
+                  I'm passionate about staying up-to-date with the latest technologies and 
+                  frameworks.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Right side stats */}
-        <div className="col-span-2 flex flex-col items-end justify-between">
-          <div className="flex flex-col items-end justify-center">
-            <span className="inline-block text-4xl font-bold">16+</span>
-            <h2 className="text-lg font-medium capitalize text-dark/75">
-              Technologies
-            </h2>
-          </div>
-
-          <div className="flex flex-col items-end justify-center">
-            <span className="inline-block text-4xl font-bold">3D</span>
-            <h2 className="text-lg font-medium capitalize text-dark/75">
-              Interactive
-            </h2>
-          </div>
-
-          <div className="flex flex-col items-end justify-center">
-            <span className="inline-block text-4xl font-bold">100%</span>
-            <h2 className="text-lg font-medium capitalize text-dark/75">
-              Responsive
-            </h2>
-          </div>
-        </div>
       </div>
     </>
   );
