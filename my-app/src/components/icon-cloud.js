@@ -280,13 +280,13 @@ const IconCloud = ({
 
   return React.createElement('canvas', {
     ref: canvasRef,
-    width: 600,
-    height: 600,
+    width: 400,
+    height: 400,
     onMouseDown: handleMouseDown,
     onMouseMove: handleMouseMove,
     onMouseUp: handleMouseUp,
     onMouseLeave: handleMouseUp,
-    className: "rounded-lg mx-auto",
+    className: "rounded-lg mx-auto w-full h-auto max-w-full max-h-full",
     'aria-label': "Interactive 3D Icon Cloud",
     role: "img"
   });
