@@ -35,7 +35,7 @@ const Skills = () => {
             <div className="hidden md:flex h-full gap-6">
               {/* Left side - Tech Stack Description */}
               <div className="w-1/2 flex flex-col items-start justify-start">
-                <h2 className="text-lg mb-4 font-bold uppercase text-dark/75">
+                <h2 className="text-2xl mb-4 font-bold uppercase text-dark/75">
                   Tech Stack
                 </h2>
                 

@@ -13,7 +13,7 @@ const AnimatedNumbers = ({ value, className = "" }) => {
   const ref = useRef(null);
   const motionValue = useMotionValue(0);
   const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView(ref, {once:true});
+  const isInView = useInView(ref, { once: true });
   useEffect(() => {
     if (isInView) {
       motionValue.set(value);
@@ -22,16 +22,14 @@ const AnimatedNumbers = ({ value, className = "" }) => {
 
   useEffect(() => {
     springValue.on("change", (latest) => {
-        if(ref.current && latest.toFixed(0) <= value){
-            ref.current.textContent = latest.toFixed(0);
-        }
-    })
-  }, [springValue, value])
-  
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed(0);
+      }
+    });
+  }, [springValue, value]);
 
   return <span ref={ref}></span>;
 };
-
 
 const about = () => {
   return (
@@ -50,25 +48,26 @@ const about = () => {
               </h2>
 
               <p className="font-medium">
-                Hi, I'm CodeBucks, a web developer and UI/UX designer with a
-                passion for creating beautiful, functional, and user-centered
-                digital experiences. With 4 years of experience in the field. I
-                am always looking for new and innovative ways to bring my
-                clients' visions to life.
+                A web developer with a knack for clean design and smart
+                solutions. I build responsive websites and apps using ReactJS
+                and FlutterFlow, blending creativity with real-world
+                functionality
               </p>
 
               <p className=" my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it's about solving problems and creating intuitive,
-                enjoyable experiences for users.
+                I’m an EXTC student at KJ Somaiya Institute of Technology with a
+                strong programming base from my Diploma in Computer Engineering.
+                I specialize in building user-focused web and mobile experiences
+                that are both functional and visually engaging.
               </p>
 
               <p className="font-medium">
-                Whether I'm working on a website, mobile app, or other digital
-                product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                My work includes real-world projects like e-commerce and service
+                websites, always aiming to solve practical problems with clean,
+                responsive design. I bring creativity, attention to detail, and
+                a calm, collaborative approach to every project. Passionate
+                about continuous learning, I’m eager to contribute to impactful,
+                meaningful work.
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-2">
@@ -82,30 +81,36 @@ const about = () => {
 
             <div className="col-span-2 flex flex-col items-end justify-between">
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"><AnimatedNumbers value={2}/>+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={2} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   Experience
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"><AnimatedNumbers value={5}/>+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={3} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   Projects Completed
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold"><AnimatedNumbers value={5}/>+</span>
+                <span className="inline-block text-7xl font-bold">
+                  <AnimatedNumbers value={5} />+
+                </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   Experience
                 </h2>
               </div>
             </div>
           </div>
-          <Skills/>
-          <Experience/>
-          <Education/>
+          <Skills />
+          <Experience />
+          <Education />
         </Layout>
       </main>
     </>
