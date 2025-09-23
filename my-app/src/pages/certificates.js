@@ -57,20 +57,26 @@ const Certificate = ({ img, title, date, link }) => {
     <motion.li
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
-    //   viewport={{ once: true }}
+      //   viewport={{ once: true }}
       className="relative w-full p-4 py-6 my-4 rounded-xl flex items-center
     justify-between bg-light text-dark first:mt-0 border border-solid border-dark
-    border-r-4 border-b-4 
+    border-r-4 border-b-4 dark:border-light dark:bg-dark dark:text-light
     "
     >
       <MovingImg title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <span className="text-primary font-semibold pl-4 dark:text-primaryDark">
+        {date}
+      </span>
     </motion.li>
   );
 };
 const FeaturedCertificate = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl">
+    <li
+      className="relative col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl
+    dark:bg-dark dark:border-light
+    "
+    >
       <div
         className="absolute top-0 -right-3 w-[101%] h-[103%] bg-dark rounded-[2rem] -z-10
         rounded-br-3xl"
@@ -86,6 +92,8 @@ const FeaturedCertificate = ({ img, title, time, summary, link }) => {
           className="w-full h-auto"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
+          priority
+          sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
         />
       </Link>
       <Link href={link} target="_blank">
@@ -93,7 +101,9 @@ const FeaturedCertificate = ({ img, title, time, summary, link }) => {
           {title}
         </h2>
         <p className="text-sm mb-2">{summary}</p>
-        <span className="tetx-primary font-semibold">{time}</span>
+        <span className="tetx-primary font-semibold dark:text-primaryDark">
+          {time}
+        </span>
       </Link>
     </li>
   );
@@ -106,7 +116,7 @@ const certificates = () => {
         <title>About Page | Certificates Page</title>
         <meta name="description" content="About Manas Suple" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden">
+      <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Words Can Change The World!" className="mb-16 " />
           <ul className="grid grid-cols-2 gap-16">

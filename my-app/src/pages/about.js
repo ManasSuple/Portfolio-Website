@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Head from "next/head";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
-import profilePic from "../../public/images/profile/developer-pic-2.jpg";
+import profilePic from "../../public/images/profile/developer-pic-2.png";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skills from "@/components/Skills";
@@ -38,12 +38,12 @@ const about = () => {
         <title>About Page | Manas Suple</title>
         <meta name="description" content="About Manas Suple" />
       </Head>
-      <main className="flex flex-col items-center justify-center w-full">
+      <main className="flex flex-col items-center justify-center w-full dark:text-light">
         <Layout className="pt-16 ">
           <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start ">
-              <h2 className="text-lg mb-4 font-bold uppercase text-dark/75">
+              <h2 className="text-lg mb-4 font-bold uppercase text-dark/75 dark:text-light/75">
                 About Me
               </h2>
 
@@ -70,12 +70,14 @@ const about = () => {
                 meaningful work.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-2">
-              <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark rounded-[2rem] -z-10" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light">
+              <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark dark:bg-light rounded-[2rem] -z-10 rounded-br-3xl" />
               <Image
                 src={profilePic}
                 alt="Manas Suple"
                 className="w-full h-auto rounded-2xl bg-light p-8"
+                priority
+                sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"
               />
             </div>
 
@@ -84,7 +86,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Experience
                 </h2>
               </div>
@@ -93,7 +95,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Projects Completed
                 </h2>
               </div>
@@ -102,7 +104,7 @@ const about = () => {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Experience
                 </h2>
               </div>
