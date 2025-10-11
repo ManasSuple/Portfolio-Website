@@ -67,6 +67,8 @@ export default function Home() {
           <Image src={lightbulb} alt="Manas Suple" className="w-full h-auto" />
         </div>
       </main>
+
+      
     </>
   );
 }

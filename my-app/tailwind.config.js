@@ -42,6 +42,14 @@ module.exports = {
             "repeating-radial-gradient(circle at center, rgba(255,255,255,0.3) 1px, transparent 1px, transparent 15px, rgba(255,255,255,0.3) 15px, rgba(255,255,255,0.3) 16px, transparent 16px, transparent 30px)",
         },
     },
+    screens: {
+      xs: '480px',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
   },
   plugins: [],
 };
