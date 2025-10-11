@@ -29,9 +29,9 @@ const singleWord = {
 };
 const AnimatedText = ({ text, className = "" }) => {
   return (
-    <div className="w-full mx-zuto py-2 flex items-center justify-center text-center overflow-hidden">
+    <div className="w-full mx-zuto py-2 flex items-center justify-center text-center overflow-hidden ">
       <motion.h1
-        className={`${className} inline-block w-full font-bold capitalize text-8xl text-dark`}
+        className={`${className} inline-block w-full font-bold capitalize text-8xl text-dark dark:text-light`}
         variants={quote}
         initial="initial"
         animate="animate"

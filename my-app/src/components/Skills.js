@@ -26,32 +26,32 @@ const Skills = () => {
       <h2 className="font-bold text-4xl md:text-6xl lg:text-8xl mt-16 md:mt-32 lg:mt-64 w-full text-center">
         Skills
       </h2>
-      <div className="w-full mt-16 flex justify-center">
+      <div className="w-full mt-16 flex justify-center ">
         {/* Main content box with Tech Stack and IconCloud */}
-        <div className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-2 w-full max-w-6xl">
-          <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark rounded-[2rem] -z-10" />
-          <div className="w-full h-[400px] rounded-2xl bg-light p-4">
+        <div className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light dark:bg-dark dark:border-light p-2 w-full max-w-6xl">
+          <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark dark:bg-light rounded-[2rem] -z-10" />
+          <div className="w-full h-[400px] rounded-2xl bg-light dark:bg-dark p-4">
             {/* Desktop/Tablet: 2-column layout */}
             <div className="hidden md:flex h-full gap-6">
               {/* Left side - Tech Stack Description */}
               <div className="w-1/2 flex flex-col items-start justify-start">
-                <h2 className="text-2xl mb-4 font-bold uppercase text-dark/75">
+                <h2 className="text-2xl mb-4 font-bold uppercase text-dark/75 dark:text-light/75">
                   Tech Stack
                 </h2>
                 
-                <p className="font-medium mb-4 text-sm">
+                <p className="font-medium mb-4 text-sm dark:text-light/75">
                   I specialize in modern web development using cutting-edge technologies. 
                   My expertise spans across frontend and backend development, with a strong 
                   focus on creating responsive and interactive user experiences.
                 </p>
 
-                <p className="font-medium mb-4 text-sm">
+                <p className="font-medium mb-4 text-sm dark:text-light/75">
                   From React and JavaScript for dynamic frontend development to Python and 
                   PostgreSQL for robust backend solutions, I bring comprehensive technical 
                   skills to every project.
                 </p>
 
-                <p className="font-medium text-sm">
+                <p className="font-medium text-sm dark:text-light/75">
                   I'm passionate about staying up-to-date with the latest technologies and 
                   frameworks, ensuring that every solution I deliver is both modern and 
                   future-proof.
