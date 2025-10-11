@@ -28,11 +28,7 @@ const useThemeSwitcher = () => {
           document.documentElement.classList.remove("dark");
         }
       }
-    };
-
-    handleChange();
-
-
+    };;
     mediaQuery.addEventListener("change", handleChange);
 
     handleChange();
