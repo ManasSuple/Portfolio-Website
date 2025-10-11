@@ -76,6 +76,8 @@ const about = () => {
                 src={profilePic}
                 alt="Manas Suple"
                 className="w-full h-auto rounded-2xl  p-8"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
 
