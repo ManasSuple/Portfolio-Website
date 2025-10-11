@@ -2,12 +2,15 @@ import Link from "next/link";
 import React from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
 import {
   TwitterIcon,
   DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
   PinterestIcon,
+  MoonIcon,
+  SunIcon,
 } from "./Icons";
 import { motion } from "framer-motion";
 
@@ -29,6 +32,8 @@ const CustomLink = ({ href, title, className = "" }) => {
   );
 };
 const NavBar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+
   return (
     <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
       <nav>
@@ -88,6 +93,14 @@ const NavBar = () => {
         >
           <DribbbleIcon />
         </motion.a>
+
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </nav>
 
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
