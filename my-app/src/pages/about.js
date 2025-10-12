@@ -40,9 +40,9 @@ const about = () => {
       </Head>
       <main className="flex flex-col items-center justify-center w-full dark:text-light">
         <Layout className="pt-16 ">
-          <AnimatedText text="Passion Fuels Purpose!" className="mb-16" />
-          <div className="grid w-full grid-cols-8 gap-16">
-            <div className="col-span-3 flex flex-col items-start justify-start ">
+          <AnimatedText text="Passion Fuels Purpose!" className="mb-16 max-lg:!text-7xl max-sm:!text-6xl max-xs:!text-4xl max-sm:mb-8" />
+          <div className="grid w-full grid-cols-8 gap-16 max-sm:gap-8">
+            <div className="col-span-3 flex flex-col items-start justify-start max-xl:col-span-4 max-md:order-2 max-md:col-span-8">
               <h2 className="text-lg mb-4 font-bold uppercase text-dark/75 dark:text-light/75">
                 About Me
               </h2>
@@ -70,8 +70,9 @@ const about = () => {
                 meaningful work.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-2 dark:bg-dark dark:border-light">
-              <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark dark:bg-light rounded-[2rem] -z-10" />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+             bg-light p-2 dark:bg-dark dark:border-light max-xl:col-span-4 max-md:order-1 max-md:col-span-8">
+              <div className="absolute top-0 -right-3 w-[102%] h-[103%] bg-dark dark:bg-light rounded-[2rem] -z-10 " />
               <Image
                 src={profilePic}
                 alt="Manas Suple"
@@ -81,30 +82,30 @@ const about = () => {
               />
             </div>
 
-            <div className="col-span-2 flex flex-col items-end justify-between">
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+            <div className="col-span-2 flex flex-col items-end justify-between max-xl:col-span-8 max-xl:flex-row max-xl:items-center max-md:order-3">
+              <div className="flex flex-col items-end justify-center max-xl:items-center">
+                <span className="inline-block text-7xl font-bold max-md:text-6xl max-sm:text-5xl max-xs:text-4xl">
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 max-xl:text-center max-md:text-lg max-sm:text-base max-xs:text-sm">
                   Experience
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+              <div className="flex flex-col items-end justify-center max-xl:items-center">
+                <span className="inline-block text-7xl font-bold max-md:text-6xl max-sm:text-5xl max-xs:text-4xl">
                   <AnimatedNumbers value={3} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 max-xl:text-center max-md:text-lg max-sm:text-base max-xs:text-sm">
                   Projects Completed
                 </h2>
               </div>
 
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block text-7xl font-bold">
+              <div className="flex flex-col items-end justify-center max-xl:items-center">
+                <span className="inline-block text-7xl font-bold max-md:text-6xl max-sm:text-5xl max-xs:text-4xl">
                   <AnimatedNumbers value={5} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 max-xl:text-center max-md:text-lg max-sm:text-base max-xs:text-sm">
                   Experience
                 </h2>
               </div>

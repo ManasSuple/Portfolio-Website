@@ -72,7 +72,7 @@ const NavBar = () => {
       : "Toggle theme, currently light";
 
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:text-light relative">
+    <header className="w-full px-32 py-8 z-10 font-medium flex items-center justify-between dark:text-light relative max-lg:px-16 max-md:px-12 max-sm:px-8">
       
       {/* ------------------HAMBRGER MENU------------------ */}
       <button
