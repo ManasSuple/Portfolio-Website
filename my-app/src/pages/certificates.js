@@ -8,6 +8,7 @@ import certificates1 from "../../public/images/articles/Accenture-Forage_page-00
 import certificates2 from "../../public/images/articles/Deloitte-Forage_page-0001.jpg";
 import certificates3 from "../../public/images/articles/GenAi-Shaksham-Certificate_page-0001.jpg";
 import { motion, useMotionValue } from "framer-motion";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FramerImage = motion(Image);
 
@@ -111,6 +112,7 @@ const certificates = () => {
         <title>Certificates | Manas Suple</title>{" "}
         <meta name="description" content="About Manas Suple" />
       </Head>
+      <TransitionEffect/>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
