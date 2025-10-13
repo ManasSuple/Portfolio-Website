@@ -39,6 +39,7 @@ const Education = () => {
       <div ref={ref} className="w-[75%] mx-auto relative max-lg:w-[90%] max-md:w-full">
         <motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light max-md:w-[2px] max-md:left-[30px] max-xs:left-[20px]" />
         <ul className="w-full flex flex-col items-start justify-between ml-4 max-xs:ml-2 ">
+          
           <Details
             type="Bachelor of Technology"
             time="2024-Present"
@@ -50,7 +51,7 @@ const Education = () => {
             type="Diploma in Computer Engineering"
             time="2021-2024"
             place="Shri Bhagubhai Mafatlal Polytechnic"
-            info="Diploma in Computer Engineering"
+            info="Diploma in Computer Engineering (CSE)"
           />
         </ul>
       </div>

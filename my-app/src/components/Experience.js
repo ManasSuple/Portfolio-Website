@@ -3,17 +3,19 @@ import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
-  const ref = useRef(null)
+  const ref = useRef(null);
   return (
-    <li ref={ref} className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between
+    <li
+      ref={ref}
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between
     max-md:w-[80%]
-    ">
-      
-      <LiIcon reference={ref}/>
-      <motion.div 
-      initial={{y:50}}
-      whileInView={{y:0}}
-      transition={{duration: 0.5, type: "spring"}}
+    "
+    >
+      <LiIcon reference={ref} />
+      <motion.div
+        initial={{ y: 50 }}
+        whileInView={{ y: 0 }}
+        transition={{ duration: 0.5, type: "spring" }}
       >
         <h3 className="capitalize text-2xl font-bold max-sm:text-xl max-xs:text-lg">
           {position}&nbsp;
@@ -36,7 +38,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
 const Experience = () => {
   const ref = useRef(null);
-  const {scrollYProgress} = useScroll({
+  const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
   });
@@ -45,32 +47,26 @@ const Experience = () => {
       <h2 className="font-bold text-8xl mb-32 w-full text-center max-md:text-6xl max-xs:text-4xl max-md:mb-16">
         Experience
       </h2>
-      <div ref={ref} className="w-[75%] mx-auto relative max-lg:w-[90%] max-md:w-full">
-        <motion.div style={{scaleY: scrollYProgress}} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light max-md:w-[2px] max-md:left-[30px] max-xs:left-[20px]" />
+      <div
+        ref={ref}
+        className="w-[75%] mx-auto relative max-lg:w-[90%] max-md:w-full"
+      >
+        <motion.div
+          style={{ scaleY: scrollYProgress }}
+          className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light max-md:w-[2px] max-md:left-[30px] max-xs:left-[20px]"
+        />
         <ul className="w-full flex flex-col items-start justify-between ml-4 max-xs:ml-2 ">
           <Details
             position="Intern"
-            company="Mira-Bhayandar Municipal Corporation"
-            companyLink="https://mbmc.gov.in/"
-            time="Jun 2023-Jul 2023"
-            address="Bhayandar, Maharashtra"
-            work="Delved into solid waste management, tracing the journey from household bins to final disposal.
-                Managed social media and email accounts as part of a group assignment.
-                Crafted engaging content, edited photos and videos for Instagram reels using Canva and Adobe Premiere Pro.
-                Honed skills in workflow and communication within public sector departments.
-                "
-          />
-
-          <Details
-            position="Intern"
-            company="Mira-Bhayandar Municipal Corporation"
-            companyLink="https://mbmc.gov.in/"
-            time="Jun 2023-Jul 2023"
-            address="Bhayandar, Maharashtra"
-            work="Delved into solid waste management, tracing the journey from household bins to final disposal.
-                Managed social media and email accounts as part of a group assignment.
-                Crafted engaging content, edited photos and videos for Instagram reels using Canva and Adobe Premiere Pro.
-                Honed skills in workflow and communication within public sector departments.
+            company="Bhaveshwar group"
+            companyLink="https://bhaveshwargroup.com/"
+            time="Sep 2025-Present"
+            address="Navi Mumbai, Maharashtra"
+            work="Assisting in the management and regular updates of the company website. 
+                  Creating, curating, and uploading engaging content for the website and blogs. 
+                  Coordinating with the design and marketing teams to develop creatives for digital platforms. 
+                  Monitoring website performance and suggesting improvements. 
+                  Researching digital trends and providing insights to enhance our online presence.
                 "
           />
 

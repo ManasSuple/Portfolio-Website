@@ -50,22 +50,20 @@ const about = () => {
               </h2>
 
               <p className="font-medium">
-                A web developer with a knack for clean design and smart
-                solutions. I build responsive websites and apps using ReactJS
-                and FlutterFlow, blending creativity with real-world
-                functionality
+                I’m an EXTC student at KJ Somaiya Institute of Technology 
+                with a strong programming base from my Diploma in Computer Engineering. 
+                I specialize in building user-focused web and mobile experiences that are 
+                both functional and visually engaging.
               </p>
 
               <p className=" my-4 font-medium">
-                I’m an EXTC student at KJ Somaiya Institute of Technology with a
-                strong programming base from my Diploma in Computer Engineering.
-                I specialize in building user-focused web and mobile experiences
-                that are both functional and visually engaging.
+                My work includes real-world projects like e-commerce and service websites, 
+                always aiming to solve practical problems with clean, responsive design. 
+                I bring creativity, attention to detail, and a calm, collaborative approach to every project.
               </p>
 
               <p className="font-medium">
-                My work includes real-world projects like e-commerce and service
-                websites, always aiming to solve practical problems with clean,
+                My work includes real-world projects always aiming to solve practical problems with clean,
                 responsive design. I bring creativity, attention to detail, and
                 a calm, collaborative approach to every project. Passionate
                 about continuous learning, I’m eager to contribute to impactful,
@@ -87,7 +85,7 @@ const about = () => {
             <div className="col-span-2 flex flex-col items-end justify-between max-xl:col-span-8 max-xl:flex-row max-xl:items-center max-md:order-3">
               <div className="flex flex-col items-end justify-center max-xl:items-center">
                 <span className="inline-block text-7xl font-bold max-md:text-6xl max-sm:text-5xl max-xs:text-4xl">
-                  <AnimatedNumbers value={2} />+
+                  <AnimatedNumbers value={1} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 max-xl:text-center max-md:text-lg max-sm:text-base max-xs:text-sm">
                   Experience
@@ -105,10 +103,10 @@ const about = () => {
 
               <div className="flex flex-col items-end justify-center max-xl:items-center">
                 <span className="inline-block text-7xl font-bold max-md:text-6xl max-sm:text-5xl max-xs:text-4xl">
-                  <AnimatedNumbers value={5} />+
+                  <AnimatedNumbers value={7} />+
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 max-xl:text-center max-md:text-lg max-sm:text-base max-xs:text-sm">
-                  Experience
+                  Certificate
                 </h2>
               </div>
             </div>

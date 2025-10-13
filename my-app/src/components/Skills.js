@@ -46,7 +46,7 @@ const Skills = () => {
                 </p>
 
                 <p className="font-medium mb-4 text-sm dark:text-light/75">
-                  From React and JavaScript for dynamic frontend development to Python and 
+                  From ReactJS and NextJS for dynamic frontend development to Python and 
                   PostgreSQL for robust backend solutions, I bring comprehensive technical 
                   skills to every project.
                 </p>
@@ -87,7 +87,7 @@ const Skills = () => {
                 </p>
 
                 <p className="font-medium mb-3 text-sm">
-                  From React and JavaScript for dynamic frontend development.
+                  From ReactJS and NextJS for dynamic frontend development.
                 </p>
 
                 <p className="font-medium text-sm">
