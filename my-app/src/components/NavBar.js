@@ -8,6 +8,7 @@ import {
   DribbbleIcon,
   GithubIcon,
   LinkedInIcon,
+  InstagramIcon,
   PinterestIcon,
   MoonIcon,
   SunIcon,
@@ -145,24 +146,24 @@ const NavBar = () => {
             <LinkedInIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://dribbble.com/manassuple"
             target={"_blank"}
             rel="noopener noreferrer"
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3 bg-light rounded-full"
           >
-            <PinterestIcon />
+            <DribbbleIcon />
           </motion.a>
           <motion.a
-            href="https://twitter.com"
+            href="https://www.instagram.com/_manas_1994/"
             target={"_blank"}
             rel="noopener noreferrer"
             whileHover={{ y: -3 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 ml-3"
           >
-            <DribbbleIcon />
+            <InstagramIcon className=" hover:text-pink-500 w-6 h-6" />
           </motion.a>
 
           <button

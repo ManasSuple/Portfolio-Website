@@ -55,6 +55,17 @@ export const LinkedInIcon = ({ className, ...rest }) => (
   </svg>
 );
 
+export const InstagramIcon = ({ className = "", ...rest }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 448 512"
+    {...rest}
+    className={`w-full h-auto transition-colors duration-200 fill-current ${className}`}
+  >
+    <path d="M224.1 141c-63.6 0-114.9 51.4-114.9 114.9S160.5 370.8 224.1 370.8 339 319.4 339 255.9 287.7 141 224.1 141zm0 189.6c-41.3 0-74.7-33.4-74.7-74.7s33.4-74.7 74.7-74.7 74.7 33.4 74.7 74.7-33.4 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.9-26.9 26.9s-26.9-12-26.9-26.9 12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-.1-54.1-44-98-98.1-98.1H98.1C44 63.2.1 107.1 0 161.2v189.6c.1 54.1 44 98 98.1 98.1h249.9c54.1-.1 98.1-44 98.1-98.1V161.2zm-48.1 189.6c0 26.5-21.5 48.1-48.1 48.1H98.1c-26.5 0-48.1-21.5-48.1-48.1V161.2c0-26.5 21.5-48.1 48.1-48.1h249.9c26.5 0 48.1 21.5 48.1 48.1v189.6z" />
+  </svg>
+);
+
 export const PinterestIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
