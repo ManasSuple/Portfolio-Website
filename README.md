@@ -20,8 +20,9 @@ Every section — from the hero text to project cards — represents a part of m
 - **Framework:** Next.js (React)
 - **Styling:** Tailwind CSS
 - **Animations:** Framer Motion
-- **Icons:** Lucide React
+- **Icons:** Lucide Icons, Shadcn/UI Components
 - **UI Components:** shadcn/ui
+- **Deployment**: Vercel
 
 ---
 
@@ -31,6 +32,8 @@ Every section — from the hero text to project cards — represents a part of m
 - Dynamic project and certificate sections  
 - Minimal and fast with clean code  
 - Social links integrated for easy reach
+- Optimized image rendering using Next.js <Image> component
+- Modular structure for easy scalability and updates
 
 ---
 
@@ -44,16 +47,17 @@ Every section — from the hero text to project cards — represents a part of m
 
 ---
 
-## 🔍 Sections Included
+## 💼 Key Sections
 
-- 🏠 **Home:** My tagline and introduction  
-- 💼 **Projects:** All my recent web and AI-based builds  
-- 🧾 **Certificates:** Verified certifications from Deloitte, Accenture Forage, etc.  
-- ✉️ **Contact:** Direct links to reach out and collaborate  
+-Home: A dynamic landing page introducing me and my approach to building clean, smart, and scalable solutions.
+-About: Highlights my background, education, and development journey.
+-Projects: Showcases my selected works with direct links to GitHub repositories and live demos.
+-Certificates: Displays certifications from platforms like Deloitte and Accenture Forage.
+-Contact: Easy ways to connect with me via social media or email. 
 
 ---
 
-## 🚀 Live Demo
+## 🖥 Check out the live version here:
 
 Check it out here 👇  
 🔗 **(https://manas-suple-portfolio-website.vercel.app/)**
