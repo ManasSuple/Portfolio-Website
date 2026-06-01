@@ -10,7 +10,7 @@ import project2 from "../../public/images/projects/No-Image.jpg";
 import project3 from "../../public/images/projects/rag-pdf-reader.jpg";
 import project4 from "../../public/images/projects/KJ-Somaiya-IV-Portal.jpg";
 import project5 from "../../public/images/projects/linkedin-post-generator.jpg";
-import project6 from "../../public/images/projects/linkedin-post-generator.jpg";
+import project6 from "../../public/images/projects/travel-ai-agent.jpg";
 
 
 import { motion, scale } from "framer-motion";
