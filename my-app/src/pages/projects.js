@@ -5,11 +5,14 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project4 from "../../public/images/projects/KJ-Somaiya-IV-Portal.jpg";
-import project3 from "../../public/images/projects/rag-pdf-reader.jpg";
-import project5 from "../../public/images/projects/linkedin-post-generator.jpg";
 import project1 from "../../public/images/projects/No-Image.jpg"; //TimeTable generator change later
-import project2 from "../../public/images/projects/travel-ai-agent.jpg";
+import project2 from "../../public/images/projects/No-Image.jpg";
+import project3 from "../../public/images/projects/rag-pdf-reader.jpg";
+import project4 from "../../public/images/projects/KJ-Somaiya-IV-Portal.jpg";
+import project5 from "../../public/images/projects/linkedin-post-generator.jpg";
+import project6 from "../../public/images/projects/linkedin-post-generator.jpg";
+
+
 import { motion, scale } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
