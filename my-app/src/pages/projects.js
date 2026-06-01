@@ -5,11 +5,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/KJ-Somaiya-IV-Portal.jpg";
-import project2 from "../../public/images/projects/rag-pdf-reader.jpg";
-import project3 from "../../public/images/projects/linkedin-post-generator.jpg";
-import project4 from "../../public/images/projects/No-Image.jpg"; //TimeTable generator change later
-import project5 from "../../public/images/projects/travel-ai-agent.jpg";
+import project4 from "../../public/images/projects/KJ-Somaiya-IV-Portal.jpg";
+import project3 from "../../public/images/projects/rag-pdf-reader.jpg";
+import project5 from "../../public/images/projects/linkedin-post-generator.jpg";
+import project1 from "../../public/images/projects/No-Image.jpg"; //TimeTable generator change later
+import project2 from "../../public/images/projects/travel-ai-agent.jpg";
 import { motion, scale } from "framer-motion";
 import TransitionEffect from "@/components/TransitionEffect";
 
@@ -146,18 +146,29 @@ const projects = () => {
           <div className="grid grid-col-12 gap-24 gap-y-32 max-xl:gap-x-16 max-lg:gap-x-8 max-md:gap-y-24 max-sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                title="KJ-Somaiya-IV-Portal"
-                summary=" A full-stack web application that streamlines industrial visit management 
-                for KJ Somaiya College of Engineering. Students can easily browse, register, 
-                and track industrial visits, while admins can schedule visits, manage registrations, 
-                and upload content—all from a secure, role-based dashboard. Built with React, 
-                TypeScript, TailwindCSS, and Supabase, the system features real-time data fetching, 
-                cloud-based image storage, responsive design, and a robust authentication system, 
-                providing a seamless experience for both students and faculty."
-                link="https://github.com/ManasSuple/KJ-Somaiya-Project"
-                type="Featured Project"
-                github="https://github.com/ManasSuple/KJ-Somaiya-Project"
+                title="TimeTable Generator"
+                summary="An intelligent timetable management system that automates schedule creation for 
+                multiple departments and academic years. The platform generates conflict-free timetables, 
+                validates faculty and classroom allocations, supports manual administrative adjustments, 
+                and streamlines academic scheduling through a centralized dashboard. (Currently in Development)"
+                link="/"
+                type="In-Progress Project"
+                github="https://github.com/ManasSuple/TimeTable-Generator"
                 img={project1}
+              />
+            </div>
+
+            <div className="col-span-6 max-sm:col-span-12">
+              <Project
+                title="AI-Based Resume–Job Matching and Recruitment Assistance System"
+                summary=" An AI-powered recruitment assistance platform that automates resume screening by 
+                comparing resumes with job descriptions using Natural Language Processing (NLP). 
+                The system calculates candidate-job match scores, identifies skill gaps, evaluates ATS compatibility, 
+                and provides personalized recommendations to improve hiring efficiency and candidate readiness."
+                link="https://travel-ai-agent-manas-suple.streamlit.app/"
+                type="Hands-on Ai Project"
+                github="https://github.com/ManasSuple/Travel-Ai-Agent"
+                img={project2}
               />
             </div>
 
@@ -174,33 +185,23 @@ const projects = () => {
                 link="https://rag-pdfreader-manas-suple.streamlit.app/"
                 type="Hands-on Ai Project"
                 github="https://github.com/ManasSuple/RAG-PDFReader"
-                img={project2}
-              />
-            </div>
-
-            <div className="col-span-6 max-sm:col-span-12">
-              <Project
-                title="Travel Ai Agent"
-                summary=" An intelligent travel planning agent that generates real-time travel 
-                reports for any destination. Using LangChain and Google Gemini API, the app 
-                provides weather updates, top attractions, budget estimates, simulated flights 
-                from Mumbai, and travel tips—all in a single report. Built as a Python CLI app, 
-                it demonstrates practical AI integration, live data fetching, 
-                and automated itinerary generation, offering a seamless planning experience."
-                link="https://travel-ai-agent-manas-suple.streamlit.app/"
-                type="Hands-on Ai Project"
-                github="https://github.com/ManasSuple/Travel-Ai-Agent"
                 img={project3}
               />
             </div>
 
             <div className="col-span-12">
               <FeaturedProject
-                title="TimeTable Generator"
-                summary=" Currently in development."
-                link="/"
-                type="In-Progress Project"
-                github="https://github.com/ManasSuple/TimeTable-Generator"
+                title="KJ-Somaiya-IV-Portal"
+                summary=" A full-stack web application that streamlines industrial visit management 
+                for KJ Somaiya College of Engineering. Students can easily browse, register, 
+                and track industrial visits, while admins can schedule visits, manage registrations, 
+                and upload content—all from a secure, role-based dashboard. Built with React, 
+                TypeScript, TailwindCSS, and Supabase, the system features real-time data fetching, 
+                cloud-based image storage, responsive design, and a robust authentication system, 
+                providing a seamless experience for both students and faculty."
+                link="https://github.com/ManasSuple/KJ-Somaiya-Project"
+                type="Featured Project"
+                github="https://github.com/ManasSuple/KJ-Somaiya-Project"
                 img={project4}
               />
             </div>
@@ -219,6 +220,22 @@ const projects = () => {
                 type="Fetured Project"
                 github="/"
                 img={project5}
+              />
+            </div>
+
+            <div className="col-span-6 max-sm:col-span-12">
+              <Project
+                title="Travel Ai Agent"
+                summary=" An intelligent travel planning agent that generates real-time travel 
+                reports for any destination. Using LangChain and Google Gemini API, the app 
+                provides weather updates, top attractions, budget estimates, simulated flights 
+                from Mumbai, and travel tips—all in a single report. Built as a Python CLI app, 
+                it demonstrates practical AI integration, live data fetching, 
+                and automated itinerary generation, offering a seamless planning experience."
+                link="https://travel-ai-agent-manas-suple.streamlit.app/"
+                type="Hands-on Ai Project"
+                github="https://github.com/ManasSuple/Travel-Ai-Agent"
+                img={project6}
               />
             </div>
 
