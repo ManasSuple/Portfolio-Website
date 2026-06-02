@@ -5,8 +5,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import project1 from "../../public/images/projects/No-Image.jpg"; //TimeTable generator change later
-import project2 from "../../public/images/projects/No-Image.jpg";
+import project1 from "../../public/images/projects/timetable-generator.jpeg"; //TimeTable generator change later
+import project2 from "../../public/images/projects/ai-job-matcher.jpeg"; // AI Based Resume-Job Matching change later
 import project3 from "../../public/images/projects/rag-pdf-reader.jpg";
 import project4 from "../../public/images/projects/KJ-Somaiya-IV-Portal.jpg";
 import project5 from "../../public/images/projects/linkedin-post-generator.jpg";
@@ -168,9 +168,9 @@ const projects = () => {
                 comparing resumes with job descriptions using Natural Language Processing (NLP). 
                 The system calculates candidate-job match scores, identifies skill gaps, evaluates ATS compatibility, 
                 and provides personalized recommendations to improve hiring efficiency and candidate readiness."
-                link="https://travel-ai-agent-manas-suple.streamlit.app/"
+                link="/"
                 type="Hands-on Ai Project"
-                github="https://github.com/ManasSuple/Travel-Ai-Agent"
+                github="https://github.com/ManasSuple/AI-Resume-Matcher"
                 img={project2}
               />
             </div>
@@ -219,9 +219,9 @@ const projects = () => {
                 Built with Streamlit, this project demonstrates AI-powered content generation, 
                 context-aware prompting, and an intuitive user interface for professionals, 
                 marketers, and thought leaders."
-                link="/"
+                link="https://linkedin-postgenerator-manas-suple.streamlit.app/"
                 type="Fetured Project"
-                github="/"
+                github="https://github.com/ManasSuple/LinkedIn-PostGenerator"
                 img={project5}
               />
             </div>
